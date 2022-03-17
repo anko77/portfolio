@@ -1,0 +1,184 @@
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #ffffff;
+  font: Meiryo,Helvetica,Arial,Sans-Serif;
+  color: #666;
+
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 1rem;
+  padding: 0;
+}
+.site-title {
+  width: 100%;
+}
+.site-title a {
+  display: block;
+}
+.sec-title img {
+  margin-bottom: 20px;
+}
+
+
+
+header {
+  background-color: #988063ac;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+#top {
+  max-width: 960px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+#top .info {
+  width:30%;
+}
+.menu {
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 2%;
+}
+.menu nav ul {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.menu nav ul li {
+  font-size: 0.9rem;
+  font-weight:800;
+}
+.menu nav ul li:first-child {
+  margin-left: 0;
+}
+a.menu-btn {
+  display: inline-block;
+  color:#000;
+  background-color: #ffffff;
+  border: 2px solid #747d71;
+  padding: 10px 40px;
+  width: 100%;
+}
+a.menu-btn:hover {
+  opacity: 0.5;
+}
+
+#hero ul li {
+  position: absolute;
+}
+
+#hero img {
+  width: 100%;
+  max-width: 955px;
+  height: 605px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
+  border-radius: 1vh;
+}
+#hero img.visible {
+  opacity: 1;
+}
+#contents {
+  margin-top: 680px;
+  display: flex;
+  justify-content: space-between;
+}
+#main {
+  width: 70%;
+  padding-right: 20%;
+}
+#about {
+  margin-bottom: 20px;
+}
+#information p {
+  line-height: 2rem;
+}
+#side  {
+ width: 30%;
+}
+footer {
+  background-color: #988063ac;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  #top {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .site-title {
+   margin-top: 20px;
+   text-align: center;
+  }
+  #top .info {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .menu {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    
+  }
+  .menu nav ul {
+    flex-direction: column;
+  }
+  .menu nav ul li {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 2px 60px;
+    font-size: 1.75rem;
+  }
+ 
+  #contents {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #main {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  #side {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
