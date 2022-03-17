@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 html {
   font-size: 100%;
 }
@@ -39,6 +38,7 @@ li {
   background-color: #fff;
   
 }
+/* ヘッダー */
 header .top {
   height: 10vh;
   background-color: #ffffff;
@@ -56,7 +56,6 @@ header .site-title {
   color: #1192e2;
   font-size: 2rem;
   font-weight: bold;
- 
 }
 header .pc-menu {
   background-color: #676b73;
@@ -116,14 +115,10 @@ header .sp-menu ul li {
 header .sp-menu a {
   color: #fbfbfb;
   font-size: 20px;
-
 }
 header #input:checked ~ #content {
   transform: translateX(0);
 }
-
-
-
 header .header-graph {
   height: 80vh;
   background-image: url(../img/header.png);
@@ -132,7 +127,6 @@ header .header-graph {
   background-position: center top;
   position: relative;
 }
-
 .message {
   position: absolute;
   color: #2a2a2a;
@@ -143,8 +137,9 @@ header .header-graph {
   background-color: #ffffff;
   padding: 20px;
 }
+/* ヘッダーここまで */
 
-
+/* メイン */
 #news {
   text-align: center;
   margin: 80px 0;
@@ -214,6 +209,9 @@ header .header-graph {
     #42eff882 100%
   );
 }
+/* メインここまで */
+
+/* フッター */
 footer {
  background-color: #666a6a;
  padding: 80px 0 10px 0;
@@ -237,6 +235,9 @@ footer .copyright {
   text-align: center;
   color: #fff;
 }
+/* フッターここまで */
+
+/* レスポンシブル */
 @media screen and (min-width: 896px ) {
  header .sp-menu {
     display: none;
@@ -251,12 +252,16 @@ header .top {
   padding-top: 20px;
   margin-bottom: 20px;
 }
-
+header .header-graph {
+  height: 40vh; 
+}
 header .message {
-  width: 40%;
   bottom: 30px;
-  right: 50px;
-  font-size: 1.5rem;
+  right: 20px;
+  padding: 10px;
+}
+header .message p {
+  font-size: 1rem;
 }
 header .pc-menu {
   display: none;
@@ -302,4 +307,5 @@ footer nav ul {
 footer nav ul li {
   margin-bottom: 10px;
 }
+/* レスポンシブルここまで */
 }

@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 html {
   font-size: 100%;
@@ -36,8 +37,7 @@ li {
   margin-bottom: 20px;
 }
 
-
-
+/* ヘッダー */
 header {
   background-color: #988063ac;
   color: #fff;
@@ -45,6 +45,9 @@ header {
   padding: 10px 20px;
   text-align: center;
 }
+/* ヘッダーここまで */
+
+/* メイン */
 #top {
   max-width: 960px;
   display: flex;
@@ -70,12 +73,12 @@ header {
 }
 .menu nav ul li {
   font-size: 0.9rem;
-  font-weight:800;
+  font-weight: bold;
 }
 .menu nav ul li:first-child {
   margin-left: 0;
 }
-a.menu-btn {
+.menu-btn li a {
   display: inline-block;
   color:#000;
   background-color: #ffffff;
@@ -121,6 +124,9 @@ a.menu-btn:hover {
 #side  {
  width: 30%;
 }
+/* メインここまで */
+
+/* フッター */
 footer {
   background-color: #988063ac;
   color: #fff;
@@ -128,7 +134,9 @@ footer {
   padding: 10px 20px;
   text-align: center;
 }
+/* フッターここまで */
 
+/* レスポンシブル */
 @media screen and (max-width: 1024px) {
   .wrapper {
     margin-bottom: 70px;
@@ -150,8 +158,7 @@ footer {
   .menu {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
-    
+    margin-top: 20px; 
   }
   .menu nav ul {
     flex-direction: column;
@@ -181,4 +188,5 @@ footer {
     text-align: center;
     margin-top: 20px;
   }
+  /* レスポンシブルここまで */
 }
